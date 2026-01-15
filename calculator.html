@@ -1,0 +1,189 @@
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calc-style.css" />
+</head>
+<body>
+  <p class="textBox">Welcome :)</p>
+  <!--DISPLAY-->
+  <div class="allBoxes">
+    <div class="row1">
+      <button
+        class="one number"
+        onclick="
+          calculation += '1';
+          displayCalc(calculation)
+        "
+      >
+        1
+      </button>
+
+      <button
+        class="two number"
+        onclick="
+          calculation += '2';
+          displayCalc(calculation)
+        "
+      >
+        2
+      </button>
+
+      <button
+        class="three number"
+        onclick="
+          calculation += '3';
+          displayCalc(calculation)
+        "
+      >
+        3
+      </button>
+
+      <button
+        class="plus opp"
+        onclick="
+          calculation += ' + ';
+          displayCalc(calculation)
+        "
+      >
+        +
+      </button>
+    </div>
+
+    <div class="row2">
+      <button
+        class="four number"
+        onclick="
+          calculation += '4';
+          displayCalc(calculation)
+        "
+      >
+        4
+      </button>
+
+      <button
+        class="five number"
+        onclick="
+          calculation += '5';
+        displayCalc(calculation)
+        "
+      >
+        5
+      </button>
+
+      <button
+        class="six number"
+        onclick="
+          calculation += '6';
+          displayCalc(calculation)
+        "
+      >
+        6
+      </button>
+
+      <button
+        class="minus opp"
+        onclick="
+          calculation += ' - ';
+        displayCalc(calculation)
+        "
+      >
+        -
+      </button>
+    </div>
+
+    <div class="row3">
+      <button
+        class="seven number"
+        onclick="
+          calculation += '7';
+          displayCalc(calculation)
+        "
+      >
+        7
+      </button>
+
+      <button
+        class="eight number"
+        onclick="
+          calculation += '8';
+          displayCalc(calculation)
+        "
+      >
+        8
+      </button>
+
+      <button
+        class="nine number"
+        onclick="
+          calculation += '9';
+          displayCalc(calculation)
+        "
+      >
+        9
+      </button>
+
+      <button
+        class="product opp"
+        onclick="
+          calculation += ' * ';
+          displayCalc(calculation)
+        "
+      >
+        x
+      </button>
+    </div>
+
+    <div class="row4">
+      <button
+        class="zero number"
+        onclick="
+          calculation += '0';
+          displayCalc(calculation)
+        "
+      >
+        0
+      </button>
+
+      <button
+        class="dot number"
+        onclick="
+          calculation += '.';
+          displayCalc(calculation)
+        "
+      >
+        .
+      </button>
+
+      <button
+        class="equals number"
+        onclick="
+          calculation = eval(calculation);
+          displayCalc(calculation)
+        "
+      >
+        =
+      </button>
+
+      <button
+        class="divide opp"
+        onclick="
+          calculation += ' / ';
+          displayCalc(calculation)
+        "
+      >
+        /
+      </button>
+    </div>
+  </div>
+  <p>
+    <button
+      class="clear"
+      onclick="
+        calculation = '';
+        displayCalc(calculation)
+      "
+    >
+      Clear
+    </button>
+  </p>
+  <script src="functinality.js"></script>
+</body>
